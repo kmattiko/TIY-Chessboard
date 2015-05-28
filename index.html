@@ -3,38 +3,144 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>TIY-Chessboard: Kasparov vs Karpov (1984)</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+<style>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+  .container {
+    margin-top: 5em;
+    border: 1px solid black;
+    width: 100%; margin: 0 auto;
+    height: 100%; margin: 0 auto;
+    min-width: 7in;
+    max-width: 7in;
+    max-height: 7in;
+    min-height: 7in;
+  }
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+  .chessboard .square{
+    width: 12.5%; padding-bottom: 10%;
+    height: 17.5px;
+    float: left;
+    outline: 1px solid black;
+  }
+  /*.rank:nth-of-type(event) {
+      background-color: purple;
+  }
+  .row .rank:nth-child(even) .square .file:nth-child(odd) {
+      background-color: tan;
+  }
+  .row .rank:nth-child(odd) .square .file:nth-child(even) {
+    background-color: tan;
+  }
+  .row .rank:nth-child(odd) .square .file:nth-child(odd) {
+    background-color: purple;
+  }
+  .chessboard .row::before,
+  .chessboard .row::after {
+    font-size: 500%
+    position: absolute;
+  }*/
+  .square {
+    font-size: large;
+
+  }
+
+</style>
+
+<main class="container">
+  <div class="chessboard">
+    <div class="row rank-1">
+      <div class="square file-a">&#9820</div>
+      <div class="square file-b">&#9822</div>
+      <div class="square file-c">&#9821</div>
+      <div class="square file-d">&#9819</div>
+      <div class="square file-e">&#9818</div>
+      <div class="square file-f">&#9821</div>
+      <div class="square file-g">&#9822</div>
+      <div class="square file-h">&#9820</div>
+    </div>
+    <div class="row rank-2">
+      <div class="square file-a">&#9823</div>
+      <div class="square file-b">&#9823</div>
+      <div class="square file-c">&#9823</div>
+      <div class="square file-d">&#9823</div>
+      <div class="square file-e">&#9823</div>
+      <div class="square file-f">&#9823</div>
+      <div class="square file-g">&#9823</div>
+      <div class="square file-h">&#9823</div>
+    </div>
+    <div class="row rank-3">
+      <div class="square file-a"></div>
+      <div class="square file-b"></div>
+      <div class="square file-c"></div>
+      <div class="square file-d"></div>
+      <div class="square file-e"></div>
+      <div class="square file-f"></div>
+      <div class="square file-g"></div>
+      <div class="square file-h"></div>
+    </div>
+    <div class="row rank-4">
+      <div class="square file-a"></div>
+      <div class="square file-b"></div>
+      <div class="square file-c"></div>
+      <div class="square file-d"></div>
+      <div class="square file-e"></div>
+      <div class="square file-f"></div>
+      <div class="square file-g"></div>
+      <div class="square file-h"></div>
+    </div>
+    <div class="row rank-5">
+      <div class="square file-a"></div>
+      <div class="square file-b"></div>
+      <div class="square file-c"></div>
+      <div class="square file-d"></div>
+      <div class="square file-e"></div>
+      <div class="square file-f"></div>
+      <div class="square file-g"></div>
+      <div class="square file-h"></div>
+    </div>
+    <div class="row rank-6">
+      <div class="square file-a"></div>
+      <div class="square file-b"></div>
+      <div class="square file-c"></div>
+      <div class="square file-d"></div>
+      <div class="square file-e"></div>
+      <div class="square file-f"></div>
+      <div class="square file-g"></div>
+      <div class="square file-h"></div>
+    </div>
+    <div class="row rank-7">
+      <div class="square file-a">&#9817</div>
+      <div class="square file-b">&#9817</div>
+      <div class="square file-c">&#9817</div>
+      <div class="square file-d">&#9817</div>
+      <div class="square file-e">&#9817</div>
+      <div class="square file-f">&#9817</div>
+      <div class="square file-g">&#9817</div>
+      <div class="square file-h">&#9817</div>
+    </div>
+    <div class="row rank-8">
+      <div class="square file-a">&#9814</div>
+      <div class="square file-b">&#9816</div>
+      <div class="square file-c">&#9815</div>
+      <div class="square file-d">&#9813</div>
+      <div class="square file-e">&#9812</div>
+      <div class="square file-f">&#9815</div>
+      <div class="square file-g">&#9816</div>
+      <div class="square file-h">&#9814</div>
+    </div>
+  &nbsp;
+</div>
+</main>
     </body>
 </html>
