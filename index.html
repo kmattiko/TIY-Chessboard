@@ -33,10 +33,27 @@
     float: left;
     outline: 1px solid black;
   }
+
+  .square:nth-child(odd) {
+      background-color: teal;
+  }
+
+  .row:nth-child(even) .square:nth-child(odd) {
+      background-color: lavender;
+  }
+
+  .square:nth-child(even) {
+    background-color: teal;
+  }
+
+  .row:nth-child(odd) .square:nth-child(even) {
+    background-color: lavender;
+  }
+
   /*.rank:nth-of-type(event) {
       background-color: purple;
   }
-  .row .rank:nth-child(even) .square .file:nth-child(odd) {
+  .row:nth-child(even) .square:nth-child(odd) {
       background-color: tan;
   }
   .row .rank:nth-child(odd) .square .file:nth-child(even) {
@@ -50,9 +67,9 @@
     font-size: 500%
     position: absolute;
   }*/
-  .square {
-    font-size: large;
 
+  .file {
+    left: -15%;
   }
 
 </style>
