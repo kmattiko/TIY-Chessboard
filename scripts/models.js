@@ -1,6 +1,5 @@
-(function(window){
 
-var initBoard = [
+/*var initBoard = [
     ['R','N','B','Q','K','B','N','R'],
     ['P','P','P','P','P','P','P','P'],
     [' ',' ',' ',' ',' ',' ',' ',' '],
@@ -15,10 +14,12 @@ var initBoard = [
     }
 
   function moves([]){
-
+  board[1][1] = board[2][1];
+  board[2][1] = ' ';
     }
+*/
 
-)}(window);
-
-board[1][1] = board[2][1];
-board[2][1] = ' ';
+var chess = {
+  movePiece: "movePiece",
+  chessboard: "chessboard",
+}
