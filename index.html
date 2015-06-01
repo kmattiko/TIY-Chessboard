@@ -10,8 +10,9 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="scripts/models.js"
+        <script src="scripts/models.js"></script>
 
     </head>
     <body>
@@ -54,12 +55,12 @@
     background-color: lavender;
   }
 
- li {
+ .buttons {
     display: inline-block;
     font-size: 30px;
-    padding: 3px 23px 3px 23px;
+    padding: 3px 42px 3px 42px;
     border: 2px solid black;
-    margin: 10px 2px 10px 2px;
+    margin: 40px 10px 40px 10px;
     background-color: purple;
   }
 /*
@@ -166,12 +167,11 @@
       <div class="square file-g">&#9816;</div>
       <div class="square file-h">&#9814;</div>
     </div>
-    <div class="buttons">
-      <ul>
-        <li>reset</li>
-        <li>forward</li>
-        <li>backward</li>
-        <li>end</li>
+    <div class= "buttons">
+        <button class= "play">&#10174;</button>
+        <button class= "backward">&#8592;</button>
+        <button class= "forward">&#8594;</button>
+        <button class= "end"> &#8677;</button>
       </ul>
     </div>
 </div>
