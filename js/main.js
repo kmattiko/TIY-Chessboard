@@ -3,7 +3,7 @@ var movePiece;
 (function(window){
   window.chess = {
 
-/*var chessboard = [ [.rank-1, .file-a], [.rank-1, .file-b], [.rank-1, .file-c],
+var chessboard = [ [.rank-1, .file-a], [.rank-1, .file-b], [.rank-1, .file-c],
 [.rank-1, .file-d], [.rank-1, .file-e], [.rank-1, .file-f], [.rank-1, .file-g],
 [.rank-1, .file-h], [.rank-2, .file-a], [.rank-2, .file-b], [.rank-2, .file-c],
 [.rank-2, .file-d], [.rank-2, .file-e], [.rank-2, .file-f], [.rank-2, .file-g],
@@ -19,7 +19,7 @@ var movePiece;
 [.rank-7, .file-d], [.rank-7, .file-e], [.rank-7, .file-f], [.rank-7, .file-g],
 [.rank-7, .file-h], [.rank-8, .file-a], [.rank-8, .file-b], [.rank-8, .file-c],
 [.rank-8, .file-d], [.rank-8, .file-e], [.rank-8, .file-f], [.rank-8, .file-g],
-[.rank-8, .file-h], ];*/
+[.rank-8, .file-h], ];
 
 
 movePiece = document.querySelectorAll('.buttons');
