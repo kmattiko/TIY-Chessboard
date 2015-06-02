@@ -19,7 +19,7 @@
     }
 */
 
-var chess = {
+{
   movePiece: "movePiece",
   chessboard: "chessboard",
 }

@@ -24,7 +24,7 @@
   $('.play').click(function() {
 
 //models
-    return alert("test");
+    alert("test");
 
 //    moveThePiece(2, 'd', 4, 'd', 'whitepawn');
   //  moveThePiece(8, 'g', 6, 'd', 'blackknight');
